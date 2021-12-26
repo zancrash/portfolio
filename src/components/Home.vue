@@ -15,15 +15,22 @@
       <!-- <i class="fab fa-github"></i> -->
     </div>
   </div>
+  <Projects/>
+
 </template>
 
 <script>
+import Projects from './Projects.vue';
 export default {
   name: 'Home',
   props: {
     msg: String,
     tagline: String
+  },
+    components: {
+    Projects
   }
+
 }
 </script>
 
@@ -41,7 +48,7 @@ export default {
 }
 h1{
   /* color: #8bc2ad; */
-  color: #2eff74;
+  color: #fff;
   font-size: 15vh;
   margin: 0;
 }
@@ -49,7 +56,7 @@ h3{
   margin: 0;
   font-size: 3vh;
   font-weight: lighter;
-  color: yellow;
+  color: #fff;
 }
 .external{
   min-width: 150px;
@@ -62,10 +69,10 @@ h3{
 }
 
 .external a{
-  color: yellow;
+  color: #2eff74;
 }
 
 .external a:hover{
-  color: #2eff74;
+  color: yellow;
 }
 </style>

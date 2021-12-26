@@ -1,10 +1,13 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <Home msg="Farzan Ali" tagline="Full Stack Developer"/>
+  <!-- <Projects/> -->
 </template>
 
 <script>
 import Home from './components/Home.vue'
+// import Projects from './components/Home.vue'
+
 
 export default {
   name: 'App',

@@ -1,0 +1,10 @@
+{
+    "projects": [
+        {"name": "Circulr", "id": 1, "details": "lorem", "img": "https://raw.githubusercontent.com/zancrash/Circulr/main/assets/circulr_light_wide.png"},
+        {"name": "Muspace", "id": 2, "details": "lorem", "img": "https://muspace-621b5.web.app/static/media/logo.aa6e2e73.svg"},
+        {"name": "KDJ", "id": 3, "details": "lorem", "img": "https://kellyjordanfamilylaw.com/wp-content/themes/KDJ/img/KDJ_logo.svg"},
+        {"name": "UFCW 175 & 633", "id": 4, "details": "lorem", "img": "https://ufcw175.com/wp-content/uploads/2018/03/UFCW-LogoAndSlogan-3Colour_smaller-1.png"},
+        {"name": "Rutherford & Mathews", "id": 5, "details": "lorem", "img": "https://rutherfordmathews.com/wp-content/themes/rutherfordmathews-v2/img/logohorizontal.png"}
+
+    ]
+}
