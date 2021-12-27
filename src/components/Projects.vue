@@ -5,7 +5,7 @@
         <h2>
             {{project.name}}
         </h2>
-        <img :src="project.img" alt="image" width="400"/>
+        <img :src="project.img" alt="image" width="600"/>
 
     </div>
   </div>
