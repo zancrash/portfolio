@@ -1,11 +1,10 @@
 <template>
   <div id="project-holder">
     <h1>Projects</h1>
-    <div v-for="project in projects" :key="project.id">
+    <div v-for="project in projects" :key="project.key">
         <h2>
             {{project.name}}
         </h2>
-        <!-- <img :src="project.img" alt="image"/> -->
         <img :src="project.img" alt="image" width="400"/>
 
     </div>
@@ -13,6 +12,7 @@
 </template>
 
 <script>
+
 export default {
     data() {
         return {
@@ -25,7 +25,7 @@ export default {
         }
     },
     mounted() {
-        fetch('http://localhost:3000/projects')
+        fetch('https://farzan-dev-server.herokuapp.com/projects')
             .then(res => res.json())
             .then(data => this.projects = data)
             .catch(err => console.log(err.message))
@@ -34,9 +34,6 @@ export default {
 </script>
 
 <style scoped>
-    #project-holder{
-        /* background-color: #000; */
-    }
     #project-holder h1{
         color: #fff;
     }
