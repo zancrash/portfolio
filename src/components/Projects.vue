@@ -9,7 +9,11 @@
                 </div>
                 <div id="project-details" >
                     <h3 id ="project-name">{{project.name}}</h3>
-                    <p>{{project.details}}</p>
+                    <div id="project-links" v-html="project.links"></div>
+                    <div id="project-tags">
+                        <span v-for="tag in project.tags" :key="tag">{{tag}}</span>
+                    </div>
+                    <p v-html="project.details"></p>
                 </div>
             </div>
         </div>
