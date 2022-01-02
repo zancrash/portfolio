@@ -1,6 +1,6 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <Home msg="Farzan Ali" tagline="Full Stack Developer"/>
+  <Home msg="Farzan Ali" tagline="Software Developer"/>
   <!-- <Projects/> -->
 </template>
 
@@ -18,8 +18,10 @@ export default {
 </script>
 
 <style>
+ /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600&family=Roboto+Mono:wght@300;400&display=swap');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Kanit', Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

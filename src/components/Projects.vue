@@ -9,11 +9,12 @@
                 </div>
                 <div id="project-details" >
                     <h3 id ="project-name">{{project.name}}</h3>
-                    <div id="project-links" v-html="project.links"></div>
                     <div id="project-tags">
                         <span v-for="tag in project.tags" :key="tag">{{tag}}</span>
                     </div>
                     <p v-html="project.details"></p>
+                    <div id="project-links" v-html="project.links"></div>
+
                 </div>
             </div>
         </div>
@@ -43,7 +44,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
     .reverse{
         /* order: 1; */
         flex-direction: row-reverse;
@@ -60,29 +61,29 @@ export default {
     }
     #project-row{
         margin: 100px 0 0 0;
+        /* background-color: #272336; */
+
     }
     .section-title{
-        color: #fff;
-        font-size: 3rem;
+        color: #5dedcd;
+        font-size: 4em;
     }
     #project-img{
-        display: block;
+        display: flex;
         width: 50%;
     }
     #project-img img{
         width: 100%;
+        align-self: center;
     }
     #project-details{
-        /* display: flex;
-        flex-direction: column;
-        justify-content: space-between; */
         width: 50%;
         padding: 0 2% 0 2%;
     }
     #project-name{
         margin: 0;
-        color: #5dedcd;
-        font-size: 2em;
+        color: #fff;
+        font-size: 3em;
     }
     /* #links-holder{
         width: 100px;
@@ -96,15 +97,41 @@ export default {
         width: 100%;
         text-align: left;
     }
-    #project-main p{
+    #project-details p{
         color: #fff;
         font-size: 18px;
     }
+    #project-links{
+        display: flex;
+    }
+    #project-links a{
+        text-decoration: none;
+        margin: 0 25px 0 0;
+        font-weight: bold;
+        color: #5dedcd;
+
+    }
+    #project-links a p{
+        color: #5dedcd;
+        background-color: #003328;
+    }
+    #project-tags span{
+        font-size: 1em;
+        margin: 10px 15px 0 0;
+        /* color: #000; */
+        background-color: #47415c;
+        padding: 5px 10px 5px 10px;
+        display: inline-flex;
+        /* border-radius: 5px; */
+        color: #5dedcd;
+        font-family: 'Roboto Mono', monospace;
+    }
+
 
 /* 1024px wide or less */
 @media screen and (max-width: 1024px) {
     .section-title{
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 }
 
@@ -112,6 +139,9 @@ export default {
 @media screen and (max-width: 800px) {
     #project-main{
         flex-direction: column;
+    }
+    #project-name{
+        margin: 20px 0 0 0;
     }
     #project-details{
         width: 100%;

@@ -1,9 +1,16 @@
 <template>
+
+  <Menu/>
+
   <div class="hero">
     <div class="name">
+      <!-- <p>Hi, my name is</p> -->
       <h1>{{ msg }}</h1>
     </div>
-    <div class="tagline"><h3>{{ tagline }}</h3></div>
+    <div class="tagline">
+      <!-- <p>I'm a ...</p> -->
+      <h3>{{ tagline }}</h3>
+    </div>
     <div class="external">
       <!-- <fa icon="coffee"/> -->
       <a href="https://github.com/zancrash" target="blank">
@@ -12,33 +19,38 @@
       <a href="https://www.linkedin.com/in/farzan-ali-b16b82a4/" target="blank">
         <fa :icon="['fab', 'linkedin']" />
       </a>
-
-      <!-- <a href="https://www.linkedin.com/in/farzan-ali-b16b82a4/" target="blank">
-        <fa :icon="['fab', 'google-play']" />
-      </a> -->
-
-      
-      <!-- <a href="https://www.linkedin.com/in/farzan-ali-b16b82a4/" target="blank">
-        <fa :icon="['fas', 'external-link-alt']" />
-      </a> -->
-
-      <!-- <i class="fab fa-github"></i> -->
     </div>
   </div>
   <Projects/>
+
+  <div id="cta">
+    <h2>Check out more of my work on my <a href="https://github.com/zancrash" target="_blank">Github!</a></h2>
+    <h2>Or</h2>
+    <a href="mailto:farzanali1296@gmail.com">
+      <Button><fa :icon="['fas', 'envelope']" />  Get in Touch</Button>
+    </a>
+  </div>
+
+
+  <Footer/>
+
 
 </template>
 
 <script>
 import Projects from './Projects.vue';
+import Menu from './Menu.vue'
+import Footer from './Footer.vue'
 export default {
   name: 'Home',
   props: {
     msg: String,
     tagline: String
   },
-    components: {
-    Projects
+  components: {
+    Menu,
+    Projects,
+    Footer
   }
 
 }
@@ -60,17 +72,23 @@ export default {
     width: 80%;
     max-width: 1344px;
   }
-  h1{
+
+  .name p{
+    color: #5dedcd;
+    font-family: 'Roboto Mono', monospace;
+  }
+  .name h1{
     /* color: #8bc2ad; */
     color: #fff;
     font-size: 10em;
     margin: 0;
   }
-  h3{
+  .tagline h3{
     margin: 0;
+    font-family: 'Roboto Mono', monospace;
     font-size: 2.7em;
     font-weight: lighter;
-    color: #fff;
+    color: #5dedcd;
   }
   .external{
     /* min-width: 150px;
@@ -84,25 +102,83 @@ export default {
   }
 
   .external a{
-    color: #5dedcd;
+    color: #c278ff;
     font-size: 1.4em;
+    transition: all 0.1s linear;
+
   }
 
   .external a:hover{
-    color: #2eff74;
+    color: #5dedcd;
+  }
+
+  #cta{
+    margin: 0 0 100px 0;
+  }
+
+  #cta h2{
+    color: #fff;
+    margin: 20px 0 20px 0;
+  }
+  #cta h2 a{
+    color: #5dedcd;
+    text-decoration: none;
+    background-color: #003328;
+    transition: transform 0.25s ease-out;
+  }
+
+  /* #cta h2 a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #5dedcd;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  } */
+
+  #cta h2 a:hover {
+    /* text-decoration: underline; */
+    border-bottom: 1px #5dedcd ;
+  }
+
+
+  #cta button{
+    width: 250px;
+    height: 86px;
+    font-size: 22px;
+    font-family: 'Roboto Mono', monospace;
+    /* background: linear-gradient(45deg, transparent 5%, #826ec0 5%); */
+    background-color: #211d2d;
+    border: 3px solid #5dedcd;
+    color: #fff;
+    /* letter-spacing: 3px; */
+    /* line-height: 88px; */
+    /* box-shadow: 6px 0px 0px #5dedcd; */
+    outline: transparent;
+    position: relative;
+    transition: all 0.1s linear;
+  }
+
+  #cta button:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #5dedcd;
   }
 
   /* 1024px wide or less */
   @media screen and (max-width: 1024px) {
-    h1 {
+    .name h1 {
       font-size: 7em;
     }
-    h3{
+    .tagline h3{
       font-size: 2.5em;
     }
 
     .external a{
-      color: #5dedcd;
       font-size: 1.4em;
     }
   }
@@ -119,10 +195,10 @@ export default {
   /* 700px wide or less */
   @media screen and (max-width: 700px) {
 
-    h1 {
+    .name h1 {
       font-size: 6em;
     }
-    h3{
+    .tagline h3{
       font-size: 2em;
     }
 
@@ -139,20 +215,20 @@ export default {
 
   /* 600px wide or less */
   @media screen and (max-width: 600px) {
-    h1{
+    .name h1{
       font-size: 5em;
     }
-    h3{
+    .tagline h3{
       font-size: 1.8em;
     }
   }
 
   /* 450px wide or less */
   @media screen and (max-width: 450px) {
-    h1 {
-      font-size: 3.8em;
+    .name h1 {
+      font-size: 4.5em;
     }
-    h3{
+    .tagline h3{
       font-size: 1.5em;
     }
 
@@ -160,10 +236,10 @@ export default {
 
   /* 400px wide or less */
   @media screen and (max-width: 400px) {
-    h1 {
-      font-size: 3.5em;
+    .name h1 {
+      font-size: 4em;
     }
-    h3{
+    .tagline h3{
       font-size: 1.4em;
     }
 
