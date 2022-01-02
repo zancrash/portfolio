@@ -12,7 +12,7 @@
                 <fa :icon="['fas', 'envelope']" />
                 <p>farzanali1296@gmail.com</p>
             </a> -->
-            <a href="https://google.ca" target="blank">
+            <a href="https://raw.githubusercontent.com/zancrash/portfolio/master/src/assets/resume.pdf" target="_blank">
                 <div class="menu-text">
                     Resume
                 </div>
