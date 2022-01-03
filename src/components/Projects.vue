@@ -3,7 +3,7 @@
     <div id="project-holder">
         <h2 class="section-title">Projects</h2>
         <div v-for="(project, index) in projects" :key="project.key" id="project-row" :index="project.id" >
-            <div id ="project-main" v-bind:class="{ reverse: !( index % 2 != 0) }">
+            <div v-if="project" id ="project-main" v-bind:class="{ reverse: !( index % 2 != 0) }">
                 <div id="project-img">
                     <img :src="project.img" alt="image"/>
                 </div>
@@ -16,6 +16,9 @@
                     <div id="project-links" v-html="project.links"></div>
 
                 </div>
+            </div>
+            <div v-else>
+                <p id="loading">Loading Projects...</p>
             </div>
         </div>
     </div>
@@ -68,6 +71,11 @@ export default {
         color: #5dedcd;
         font-size: 4em;
     }
+    #loading{
+        color: #5dedcd;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 3em;
+    }
     #project-img{
         display: flex;
         width: 50%;
@@ -109,7 +117,6 @@ export default {
         margin: 0 25px 0 0;
         font-weight: bold;
         color: #5dedcd;
-
     }
     #project-links a p{
         color: #5dedcd;
