@@ -18,15 +18,12 @@ export default {
 </script>
 
 <style>
- /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600&family=Roboto+Mono:wght@300;400&display=swap');
 #app {
   font-family: 'Kanit', Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  /* color: #2c3e50; */
-  /* margin-top: 60px; */
 }
 body{
   background: #211d2d;

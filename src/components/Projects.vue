@@ -189,7 +189,6 @@ export default {
     #project-tags span{
         font-size: 1em;
         margin: 10px 15px 0 0;
-        /* color: #000; */
         background-color: #47415c;
         padding: 5px 10px 5px 10px;
         display: inline-flex;
