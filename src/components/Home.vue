@@ -16,7 +16,7 @@
       <a href="https://github.com/zancrash" target="blank">
         <fa :icon="['fab', 'github']" />
       </a>
-      <a href="https://www.linkedin.com/in/farzan-ali-b16b82a4/" target="blank">
+      <a href="https://www.linkedin.com/in/farzan-ali1/" target="blank">
         <fa :icon="['fab', 'linkedin']" />
       </a>
     </div>
