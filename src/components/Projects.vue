@@ -192,7 +192,6 @@ export default {
         background-color: #47415c;
         padding: 5px 10px 5px 10px;
         display: inline-flex;
-        /* border-radius: 5px; */
         color: #5dedcd;
         font-family: 'Roboto Mono', monospace;
     }

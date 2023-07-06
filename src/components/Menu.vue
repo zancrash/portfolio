@@ -2,9 +2,6 @@
 
 <div class="menu">
     <div class="menu-item-wrapper">
-        <div class="menu-item" id="logo">
-            <img src="../assets/logo.png" alt="Logo">
-        </div>
         <div class="menu-item">
         <!-- </div>
         <div class="menu-item"> -->
