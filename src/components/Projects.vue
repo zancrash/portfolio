@@ -41,7 +41,7 @@ export default {
                         "Flutter",
                         "Dart",
                         "Firebase",
-                        "STRIPE",
+                        "RESTful API",
                     ], 
                     links: "<a href='https://apps.apple.com/ca/app/circulr-reuse/id1605639496' target='_blank'>App Store</a> <a href='https://play.google.com/store/apps/details?id=com.circulrshop.circulr' target='_blank'>Play Store</a> <a href='https://github.com/zancrash/Circulr' target='_blank'>Github</a>",
                     details: "Circulr is a cross-platform mobile application developed using the Flutter framework. Circulr helps its users to track products purchased from participating businesses so they they can return used containers and encourage reuse. The app uses a firebase back-end for user authentication and data storage, as well as the STRIPE API to make payments."
@@ -51,10 +51,9 @@ export default {
                     id: 2, 
                     img:"https://i.imgur.com/H15ueAB.png", 
                     tags:[
-                        "ReactJS",
-                        "Javascript",
+                        "React",
+                        "ES6",
                         "Firebase",
-                        "Social Media"
                     ], 
                     links: "<a href='https://github.com/SherRao/MuSpace/' target='_blank'>Github</a>",
                     details: "MuSpace is a music sharing platform with the goal of connecting with similar listeners. My classmates and I built MuSpace as a project for our software engineering course. MuSpace uses the ReactJS framework for the user-facing side, and Firebase to store and serve data."
@@ -66,24 +65,26 @@ export default {
                     tags:[
                         "HTML",
                         "CSS",
-                        "JS",
-                        "WordPress"
+                        "JavaScript",
+                        "PHP",
+                        "SQL"
                     ], 
                     links: "<a href='https://www.ufcw175.com/' target='_blank'>Website</a>",
-                    details: "A website developed for the UFCW Local 175 & 633 labour union. The site was built using HTML, CSS, and JS, and uses the Wordpress CMS to serve content. I collaborated closely with the union representatives to understand their needs and goals, as well as my own team. UFCW was the largest client we took on during my time at Firefly Creative Inc."
+                    details: "A website developed for the UFCW Local 175 & 633 labour union. The front-end was coded using HTML/CSS and JavaScript. I used PHP to build back-end blogging and content managment functionality and I migrated the SQL database from the old site. I collaborated closely with the union representatives to understand their needs and goals, as well as my own team. UFCW was the largest client we took on during my time at Firefly Creative Inc."
                 },
                 {
-                    name: "KDJ", 
+                    name: "Kelly D. Jordan Family Law", 
                     id: 4, 
                     img:"https://i.imgur.com/ejl9sSi.png", 
                     tags:[
                         "HTML",
                         "CSS",
-                        "JS",
-                        "WordPress"
+                        "JavaScript",
+                        "PHP",
+                        "SQL"
                     ],
                     links: "<a href='https://kellyjordanfamilylaw.com/' target='_blank'>Website</a>",
-                    details: "Website built for the KDJ Family Law Firm. I used HTML, CSS, and JS with the WordPress CMS to allow for blog hosting and profile pages. I also utilized the ScrollMagic JavaScript library to integrate web animations. The site allows potential clients to gain information regarding their family law needs, and see which member of the KDJ team would be best suited for their needs."
+                    details: "Website built for the KDJ Family Law Firm. I used HTML, CSS, and JS to develop the front-end interface and PHP to build the back-end to allow for custom user profile pages. I also utilized the ScrollMagic JavaScript library to integrate web animations. The site allows potential clients to gain information regarding their family law needs, and see which member of the KDJ team would be best suited for their needs."
                 },
                 {
                     name: "Rutherford & Mathews", 
@@ -92,11 +93,12 @@ export default {
                     tags:[
                         "HTML",
                         "CSS",
-                        "JS",
-                        "WordPress"
+                        "JavaScript",
+                        "PHP",
+                        "SQL"
                     ], 
                     links: "<a href='https://rutherfordmathews.com/' target='_blank'>Website</a>",
-                    details: "R&M is a condominium law firm, the website I built for them is created using the WordPress CMS to allow for quick content updates and blogs, as well as allowing users to sign up for newsletters using Mailchimp integration. The site was coded with HTML, CSS, and JS. "
+                    details: "R&M is a condominium law firm, the website I developed for them is uses a PHP back-end to allow for quick content updates and blogs, as well as allowing users to sign up for newsletters using Mailchimp integration. The front-end was coded with HTML, CSS, and JS. "
                 }
             ]
             
