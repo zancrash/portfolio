@@ -58,20 +58,20 @@ export default {
                     links: "<a href='https://github.com/SherRao/MuSpace/' target='_blank'>Github</a>",
                     details: "MuSpace is a music sharing platform with the goal of connecting with similar listeners. My classmates and I built MuSpace as a project for our software engineering course. MuSpace uses the ReactJS framework for the user-facing side, and Firebase to store and serve data."
                 },
-                {
-                    name: "UFCW", 
-                    id: 3, 
-                    img:"https://i.imgur.com/g6JnOW0.png", 
-                    tags:[
-                        "HTML",
-                        "CSS",
-                        "JavaScript",
-                        "PHP",
-                        "SQL"
-                    ], 
-                    links: "<a href='https://www.ufcw175.com/' target='_blank'>Website</a>",
-                    details: "A website developed for the UFCW Local 175 & 633 labour union. The front-end was coded using HTML/CSS and JavaScript. I used PHP to build back-end blogging and content managment functionality and I migrated the SQL database from the old site. I collaborated closely with the union representatives to understand their needs and goals, as well as my own team. UFCW was the largest client we took on during my time at Firefly Creative Inc."
-                },
+                // {
+                //     name: "UFCW", 
+                //     id: 3, 
+                //     img:"https://i.imgur.com/g6JnOW0.png", 
+                //     tags:[
+                //         "HTML",
+                //         "CSS",
+                //         "JavaScript",
+                //         "PHP",
+                //         "SQL"
+                //     ], 
+                //     links: "<a href='https://www.ufcw175.com/' target='_blank'>Website</a>",
+                //     details: "A website developed for the UFCW Local 175 & 633 labour union. The front-end was coded using HTML/CSS and JavaScript. I used PHP to build back-end blogging and content managment functionality and I migrated the SQL database from the old site. I collaborated closely with the union representatives to understand their needs and goals, as well as my own team. UFCW was the largest client we took on during my time at Firefly Creative Inc."
+                // },
                 {
                     name: "Kelly D. Jordan Family Law", 
                     id: 4, 
